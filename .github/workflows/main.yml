@@ -81,7 +81,7 @@ jobs:
        # uses: jhunt/cf-push@main
           
       - name: step to deploy CF
-        uses: org-Santhosh/cf-push@main
+        uses: jhunt/cf-push@main
         with:
           api: https://api.cf.ap21.hana.ondemand.com
           username: ramyaravindra999@gmail.com
