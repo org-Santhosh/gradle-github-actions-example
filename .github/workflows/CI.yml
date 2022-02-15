@@ -41,7 +41,5 @@ jobs:
       - name: Step5 - Listing the build file name
         run: |
           ls '${{ github.workspace }}'/build/libs
-          
-  cd_workflow:
-    #needs: ci
-    uses: org-Santhosh/sample-hellowrold-java/.github/workflows/CD.yml@branch_reusable
+
+      - uses: org-Santhosh/sample-hellowrold-java/.github/workflows/CD.yml@branch_reusable
