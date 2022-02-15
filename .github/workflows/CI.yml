@@ -14,7 +14,7 @@ on:
 jobs:
     #This workflow contains a single job called "ci" 
   ci:
-    runs-on: [self-hosted, linux, X64, research]
+    runs-on: ubuntu-latest
     steps:
       - name: Step 1 - Checkout dev branch from GitHub 
         uses: actions/checkout@v2
@@ -44,12 +44,4 @@ jobs:
           
   cd_workflow:
     #needs: ci
-    uses: philips-internal/ampm-cicd-reference-application/.github/workflows/CD.yml@branch_demo1
-    #with:
-      #manifest: manifest.yml
-    secrets:
-      org: ${{ secrets.CF_ORGANISATION }}
-      space:    ${{ secrets.CF_SPACE }}
-      username: ${{ secrets.CF_USERNAME }}
-      password: ${{ secrets.CF_PASSWORD }}
-      manifest: ${{ secrets.manifest }}
+    uses: org-Santhosh/sample-hellowrold-java/.github/workflows/CD.yml@branch_reusable
