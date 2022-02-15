@@ -1,0 +1,28 @@
+name: car_workflow
+on :
+  workflow_call:
+    secrets:
+      org:
+        required: true
+      space:
+        required: true
+      username:
+        required: true
+      password:
+        required: true
+      manifest:
+        required: true
+
+jobs:
+  cd:
+    runs-on: [self-hosted, linux, X64, research]
+    steps:
+      - name: Step 7 - Deploy to CF
+        uses: philips-internal/devops-test@cf-action
+        with:
+          api: https://api.cloud.pcftest.com
+          org:      ${{ secrets.org }}
+          space:    ${{ secrets.space }}
+          username: ${{ secrets.username }}
+          password: ${{ secrets.password }}
+          manifest: ${{ inputs.manifest }}
