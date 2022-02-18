@@ -15,4 +15,4 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: org-Santhosh/privaterepo
-          token: ${{secrets.TOKEN}}
+          #token: ${{secrets.TOKEN}}
