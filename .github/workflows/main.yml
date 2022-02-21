@@ -11,8 +11,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Step 1 - Checkout main branch from GitHub 
-        #uses: actions/checkout@v2
-        uses: convictional/trigger-workflow-and-wait@v1.3.0
+        uses: actions/checkout@v2
         with:
-          repository: org-Santhosh/gs-spring-boot
+          repository: org-Santhosh/privaterepo
           #token: ${{ secrets.TOKEN }}
