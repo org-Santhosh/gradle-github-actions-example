@@ -30,8 +30,6 @@ jobs:
                  
       - name: Step5 Jfrog artifactory
         uses: jfrog/setup-jfrog-cli@v2.0.0
-        with:
-          version: latest
         env:
           JF_ARTIFACTORY_1: 18.219.130.61:8082
       - run: |
