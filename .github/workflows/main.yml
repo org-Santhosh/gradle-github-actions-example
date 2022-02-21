@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: step0 checking current repo
+        uses: actions/checkout@v2
+        
       - name: Step 1 - Checkout main branch from GitHub 
         uses: actions/checkout@v2
         with:
