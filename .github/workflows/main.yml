@@ -13,5 +13,5 @@ jobs:
       - name: Step 1 - Checkout main branch from GitHub 
         uses: actions/checkout@v2
         with:
-          repository: org-Santhosh/privaterepo
+          repository: org-Santhosh/gs-spring-boot
           token: ${{ secrets.TOKEN }}
