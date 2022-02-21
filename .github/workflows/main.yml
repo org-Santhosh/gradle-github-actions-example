@@ -16,3 +16,5 @@ jobs:
           repository: org-Santhosh/privaterepo
           token: ${{ secrets.TOKEN1 }}
           path: privaterepo
+          
+      - run: ls
