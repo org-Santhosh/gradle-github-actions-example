@@ -1,0 +1,17 @@
+
+name: Test
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: step1 just checking the runner
+        run: echo "iam taking a ubuntu machine"
+       
+      
+
+    
